@@ -9,9 +9,10 @@ var genreArray = "genres";
 var imgUrl = "https://image.tmdb.org/t/p/original"
 
 //https://developers.themoviedb.org/3/discover/movie-discover
+// Functon for search button
 $("#actionBtn").on("click", function (event) {
   event.preventDefault()
-
+// function for checking boxes
   $('.checkbox').each(function () {
     // your code here
     var checked = $(this).is(":checked")
@@ -25,7 +26,7 @@ $("#actionBtn").on("click", function (event) {
         method: "GET"
       }).then(function (response) {
         console.log(response);
-
+// below is dynamically created for showing movie poster
             var img = $("<img>")
 
             console.log(imgUrl + response.poster_path)
