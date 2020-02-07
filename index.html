@@ -11,23 +11,23 @@
 
     <title>Movie Spotter</title>
 </head>
-<!-- Dropdown Structure -->
+
 <nav>
     <div class="nav-wrapper teal lighten-2">
         <a href="#!" class="brand-logo"><i class="material-icons">local_movies</i></a>
         <ul class="right hide-on-med-and-down">
             <!-- Dropdown Trigger -->
-            <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Menu</a>
+            <a class='dropdown-trigger btn btn-floating pulse' href='#' data-target='dropdown1'><i class="material-icons">menu</i></a>
 
             <!-- Dropdown Structure -->
             <ul id='dropdown1' class='dropdown-content'>
-                <li><a href="#!">Action</a></li>
-                <li><a href="#!">Comedy</a></li>
-                <li class="divider" tabindex="-1"></li>
-                <li><a href="#!">Horror</a></li>
                 <li><a href="#!">Theater Location</a></li>
                 <li><a href="#!">Ticket info</a></li>
+                <li><a><input type="checkbox" id="unchecked" class="cbx hidden"/>
+                    <label for="unchecked" class="lbl"></label></a></li>
             </ul>
+
+
 </nav>
 
 <body>
@@ -35,32 +35,46 @@
 
         <div class="col s3 light-blue lighten-4">
             <h3>Movie Spotter</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur placeat id accusantium ullam facere
-            provident perspiciatis qui doloribus quaerat? Eveniet porro libero vitae veritatis dicta nam dolores
-            facere rerum possimus.</p>
+            <h4>Genres</h4>
+            <ul>
+                <li><a class="waves-effect waves-light btn-small" id="action">Action Movies</a></li>
+                <li><a class="waves-effect waves-light btn-small" id="comedy">Comedy Movies</a></li>
+                <li><a class="waves-effect waves-light btn-small" id="drama">Drama Movies</a></li>
+                <li><a class="waves-effect waves-light btn-small" id="doc">Documentary</a></li>
+                <li><a class="waves-effect waves-light btn-small" id="horror">Horror Movies</a></li>
+                <li><a class="waves-effect waves-light btn-small" id="romantic">Romantic Movies</a></li>
+            </ul>
 
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quod architecto laboriosam natus qui?
-            Eveniet esse deserunt maxime itaque eaque deleniti fuga inventore officiis quam cumque, corrupti saepe
-            iusto quas.</p>
-            
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, repudiandae debitis sint quam eos voluptate nisi. Blanditiis vel esse modi vero eius sit repudiandae optio eaque, harum ipsam tenetur repellendus.</p>
+            <h4>Themes</h4>
+            <ul>
+                <li><a class="waves-effect waves-light btn-small" id="adventure">Adventure</a></li>
+                <li><a class="waves-effect waves-light btn-small" id="futuristic">Futuristic</a></li>
+                <li><a class="waves-effect waves-light btn-small" id="historical">Historical</a></li>
+                <li><a class="waves-effect waves-light btn-small" id="love">Love</a></li>
+                <li><a class="waves-effect waves-light btn-small" id="psych">Psychological</a></li>
+                <li><a class="waves-effect waves-light btn-small" id=redemp>Redemption</a></li>
+            </ul>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iusto asperiores voluptatibus odio laudantium eligendi similique? Nobis maxime repudiandae explicabo soluta earum. Quos, esse? Repellendus dicta accusantium vel dolores doloremque!</p>
+            <button class="btn waves-effect waves-light" type="submit" name="actionBtn">Submit
+                <i class="material-icons right">send</i>
+            </button>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eligendi exercitationem ex quae quis? Quos, dolores natus repudiandae corrupti aliquid ea in repellat. Expedita, vitae sequi. Cumque voluptas quis assumenda.</p>
+
+
         </div>
 
         <div class="col s9">
-            <div class="nav-wrapper">
+            <!-- <div class="nav-wrapper">
                 <form>
-                  <div class="input-field">
-                    <input id="search" type="search" required>
-                    <label class="label-icon" id="movieBtn" for="search"><i class="material-icons">search</i></label>
-                    <i class="material-icons">close</i>
-                  </div>
+                    <div class="input-field">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" id="movieBtn" for="search"><i
+                                class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                    </div>
                 </form>
-              </div>
-        </div>
+            </div>
+        </div> -->
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
