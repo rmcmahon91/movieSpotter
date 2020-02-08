@@ -17,13 +17,11 @@ $("#actionBtn").on("click", function (event) {
     // your code here
     var checked = $('.checkbox').is(":checked")
     console.log($('.checkbox').is(":checked"))
-    //$('.checkbox').each(function(){
       movieGenre = $(".checkbox", this).attr("id")
       console.log(movieGenre)
       IDArr.push(movieGenre)
       console.log(IDArr)
   
-    //})
     if ($("#movies [type='checkbox']:checked").length > 1) {
     }
   })
