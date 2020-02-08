@@ -1,3 +1,4 @@
+
 // var apiKey = "6e42aba18accf15f6000946c4a42e940";
 // var queryURL = "https://api.themoviedb.org/3/movie/" + movieid + "?api_key=6e42aba18accf15f6000946c4a42e940";
 var adultContent = "true";
@@ -44,6 +45,7 @@ console.log("index of value " + clickedmovieGenre.indexOf(boxvalue))
 
   
 }
+
 })
   //https://developers.themoviedb.org/3/discover/movie-discover
   // function for search
