@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="29px" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="12.5" cy="12.5" r="12.5"></circle>
+        <filter x="-12.0%" y="-12.0%" width="124.0%" height="124.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.864838089   0 0 0 0 0.864838089   0 0 0 0 0.864838089  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(2.000000, 2.000000)">
+            <g id="Oval">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <circle stroke="#808080" stroke-width="1" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" cx="12.5" cy="12.5" r="12"></circle>
+            </g>
+            <g id="theaters-24px" transform="translate(5.081301, 5.081301)">
+                <path d="M11.1534553,1.82926829 L11.1534553,3.07136405 L9.90853659,3.07136405 L9.90853659,1.82926829 L4.92886179,1.82926829 L4.92886179,3.07136405 L3.68394309,3.07136405 L3.68394309,1.82926829 L2.43902439,1.82926829 L2.43902439,13.0081301 L3.68394309,13.0081301 L3.68394309,11.7660343 L4.92886179,11.7660343 L4.92886179,13.0081301 L9.90853659,13.0081301 L9.90853659,11.7660343 L11.1534553,11.7660343 L11.1534553,13.0081301 L12.398374,13.0081301 L12.398374,1.82926829 L11.1534553,1.82926829 Z M4.92886179,10.5239386 L3.68394309,10.5239386 L3.68394309,9.28184282 L4.92886179,9.28184282 L4.92886179,10.5239386 Z M4.92886179,8.03974706 L3.68394309,8.03974706 L3.68394309,6.79765131 L4.92886179,6.79765131 L4.92886179,8.03974706 Z M4.92886179,5.55555556 L3.68394309,5.55555556 L3.68394309,4.3134598 L4.92886179,4.3134598 L4.92886179,5.55555556 Z M11.1534553,10.5239386 L9.90853659,10.5239386 L9.90853659,9.28184282 L11.1534553,9.28184282 L11.1534553,10.5239386 Z M11.1534553,8.03974706 L9.90853659,8.03974706 L9.90853659,6.79765131 L11.1534553,6.79765131 L11.1534553,8.03974706 Z M11.1534553,5.55555556 L9.90853659,5.55555556 L9.90853659,4.3134598 L11.1534553,4.3134598 L11.1534553,5.55555556 Z" id="Shape" fill="#808080" fill-rule="nonzero"></path>
+                <polygon id="Path" points="0 0 14.8373984 0 14.8373984 14.8373984 0 14.8373984"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

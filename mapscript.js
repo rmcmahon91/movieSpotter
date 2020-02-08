@@ -68,13 +68,13 @@ $(document).ready(function() {
    
      var icons = {
        theater: {
-         icon:'theater.png'
+         icon:'theater_icon.svg'
        }
      }
    
      //For Loop to generate icons for each movie theater
      for (let i = 0; i<window.latArr.length; i++){
-       new google.maps.Marker({position: {lat: window.latArr[i], lng: window.longArr[i]}, icon: 'theater.png', map: map})
+       new google.maps.Marker({position: {lat: window.latArr[i], lng: window.longArr[i]}, icon: 'theatre_icon.svg', map: map})
      }
    
      //Generate a location marker for the current user
