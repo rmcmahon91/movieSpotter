@@ -5,22 +5,37 @@ var movieGenre = ""
 var movieThemes = ""
 var masterQuery = queryURL + "/api_key=" + apiKey + "&language=en-US" + "&sort_by=primary_release_date.desc&include_adult=" + adultContent + "&include_video=false&page=1&primary_release_date.gte=2020-03-11&primary_release_date.lte=2020-12-31&with_genres=" + movieGenre + "+" + movieThemes;
 var genreArray = "genres";
-
 var imgUrl = "https://image.tmdb.org/t/p/original"
 
 //https://developers.themoviedb.org/3/discover/movie-discover
 // function for search
 $("#actionBtn").on("click", function (event) {
   event.preventDefault()
+  var IDArr = [];
 // function when boxes have checked
-  $('.checkbox').each(function () {
+  $('#movies').each(function () {
     // your code here
-    var checked = $(this).is(":checked")
-    console.log(checked)
+    var checked = $('.checkbox').is(":checked")
+    console.log($('.checkbox').is(":checked"))
+    //$('.checkbox').each(function(){
+      movieGenre = $(".checkbox", this).attr("id")
+      console.log(movieGenre)
+      IDArr.push(movieGenre)
+      console.log(IDArr)
+  
+    //})
+    if ($("#movies [type='checkbox']:checked").length > 1) {
+    }
+  })
+  checkValue(IDArr)
+
+  function checkValue(IDArr){
+    var checked = $('.checkbox').is(":checked")
     if (checked) {
-      console.log($(this).attr("value"))
-      movieGenre = $(this).attr("value")
-      masterQuery = queryURL + "&language=en-US" + "&sort_by=primary_release_date.desc&include_adult=" + adultContent + "&include_video=false&page=1&primary_release_date.gte=2020-03-11&primary_release_date.lte=2020-12-31&with_genres=" + movieGenre 
+      //console.log($(this).attr("value"))
+      //console.log(movieGenre);
+      masterQuery = queryURL + "&language=en-US" + "&sort_by=primary_release_date.desc&include_adult=" + adultContent + "&include_video=false&page=1&primary_release_date.gte=2020-03-11&primary_release_date.lte=2020-12-31&with_genres=" + IDArr 
+      console.log(masterQuery);
       $.ajax({
         url: masterQuery,
         method: "GET"
@@ -29,19 +44,46 @@ $("#actionBtn").on("click", function (event) {
 // image div has been created dynamically 
             var img = $("<img>")
 
-            console.log(imgUrl + response.poster_path)
+            //console.log(imgUrl + response.poster_path)
             img.attr("src" ,imgUrl + response.poster_path)
             img.attr("class","images")
 
             $("#imgDiv").append(img)
       })
     }
-
-
-  })
-
-
+  }
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
