@@ -52,8 +52,17 @@ function grabMovies(genreid) {
         // vote_average: 6
         // vote_count: 2255
     
+          // image div has been created dynamically 
+          var img = $("<img>")
+
+          // console.log(imgUrl + movieposterid)
+          img.attr("src", imgUrl + movieposterid)
+          img.attr("class", "images")
+
+          $("#imgDiv").append(img)
+
       // Call the fetch() method to fetch the image, and store it in a variable
-      fetch(imgUrl + movieposterid)
+      fetch(imgUrl + "/dGMpzHn9uNqBysBQ6Sp5xdOgM66")
         .then(res => {
           if (res.ok) {
             console.log('SUCCESS')
@@ -63,13 +72,12 @@ function grabMovies(genreid) {
         })
         .then(data.movieposterid, console.log(data))
         .catch(error => console.log('ERROR'))
-
-
-
-      // function will put resolve back inside of the original loop
-      // once that is confirmed 
-      // create div that takes the movie parameters
-      // image div has been created dynamically 
+    
+      // // function will put resolve back inside of the original loop
+      // var result = data.
+      // // once that is confirmed 
+      // // create div that takes the movie parameters
+      // // image div has been created dynamically 
 
     }
   })
@@ -117,41 +125,3 @@ $('input').on('click', function () {
   }
 
 })
-
-  //https://developers.themoviedb.org/3/discover/movie-discover
-  // function for search
-  // $("#actionBtn").on("click", function (event) {
-  //   event.preventDefault()
-  //   // function when boxes have checked
-  //   $('.checkbox').each(function () {
-  //     // your code here
-  //     var checked = $(this).is(":checked")
-  //     console.log(checked)
-  //     if (checked) {
-  //       console.log($(this).attr("value"))
-  //       movieGenre = $(this).attr("value")
-  //       masterQuery = queryURL + "&language=en-US" + "&sort_by=primary_release_date.desc&include_adult=" + adultContent + "&include_video=false&page=1&primary_release_date.gte=2020-03-11&primary_release_date.lte=2020-12-31&with_genres=" + movieGenre + "," + movieThemes;
-  //       $.ajax({
-  //         url: masterQuery,
-  //         method: "GET"
-  //       }).then(function (response) {
-  //         console.log(response);
-  //         var movieid = JSON.parse(response.id);
-  //         $.ajax({
-  //         })
-  //         // image div has been created dynamically 
-  //         var img = $("<img>")
-
-  //         console.log(imgUrl + response.poster_path)
-  //         img.attr("src", imgUrl + response.poster_path)
-  //         img.attr("class", "images")
-
-  //         $("#imgDiv").append(img)
-  //       })
-  //     }
-
-
-  //   })
-
-
-  // })
